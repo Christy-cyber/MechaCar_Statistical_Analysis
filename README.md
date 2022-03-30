@@ -28,7 +28,7 @@ Table 1.  Total summary of mean, median, variance, and standard deviation for al
 
 ![total_summary_df](https://user-images.githubusercontent.com/95387273/160863100-09130db4-3e91-4547-8c68-5b18077bc9fa.png)
 
-Table 2.  Lot summary of mean, median, variance, and standard deviation for three lots of cars for PSI readings of suspension coils.
+Table 2.  Lot summary of mean, median, variance, and standard deviation for three manufacturing lots of cars for PSI readings of suspension coils.
 
 ![lot_summary_df](https://user-images.githubusercontent.com/95387273/160863138-d2f3af2c-3d73-4a2c-a454-9d702dc402ec.png)
 
