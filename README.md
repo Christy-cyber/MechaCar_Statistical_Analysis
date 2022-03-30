@@ -1,6 +1,10 @@
 # MechaCar Statistical Analysis
 ## Overview and Purpose
-
+Production data for a new car prototype were reviewed in order to aid the manufacturing team with production improvement. The following four deliverables were requested:
+- Determine which variables in the dataset predict miles per gallon (mpg) using a multiple linear regression analysis
+- Determine summary statistics on pounds per square inch (PSI) of the suspension coils from different manufacturing lots
+- Determine if suspension coil manufacturing lots are statistically different from the mean population using t-tests
+- Design a statistical study that compares vehicle performance of the MechaCar vehicles against vehicles from other manufacturers
 
 ## Resources
 - Data: MechaCar_mpg.csv, Suspension_Coil.csv
@@ -17,7 +21,16 @@ Fig. 1 Multiple linear regression output for mpg predictions.
 
 
 ### Deliverable 2:  Summary Statistics on Suspension Coils
+Weight capacities of suspension coils, measured in PSI, were tested across three production lots in order to assess consistency in performance. Mean PSI for all lots was 1498.78 PSI with a variance of 62.3 (Table 1).  Even though variance for all coils tested was less than the required 100 PSI specification, it would not be acceptable to use suspension coils from a randomly selected set because not all lots perform the same.  Further investigation into individual lots showed that suspension coils from Lot 3 did not meet design specifications as indicated by the variance of 170.29, which was well above the limit of 100 PSI (Table 2). PSI readings from this lot were driving higher variance in overall (total summary) PSI readings.  Coils sourced from Lots 1 and 2 may be used, but not those from Lot 3.
 
+
+Table 1.  Total summary of mean, median, variance, and standard deviation for all cars for PSI readings of suspension coils.
+
+![total_summary_df](https://user-images.githubusercontent.com/95387273/160863100-09130db4-3e91-4547-8c68-5b18077bc9fa.png)
+
+Table 2.  Lot summary of mean, median, variance, and standard deviation for three lots of cars for PSI readings of suspension coils.
+
+![lot_summary_df](https://user-images.githubusercontent.com/95387273/160863138-d2f3af2c-3d73-4a2c-a454-9d702dc402ec.png)
 
 
 ### Deliverable 3:  T-Tests on Suspension Coils
