@@ -78,13 +78,13 @@ Fig. 6.  One-Sample t-test for Lot 3 of suspension coil pounds per square inch (
 
 
 ### Deliverable 4: Study Design:  MechaCar vs Competition
-- Description of statistical study:
+**- Description of statistical study, data collected, and metrics tested:**
+A completely randomized design would be used to to investigate differences in CO<sub>2</sub> output across different vehicle manufacturers within the same design class as MechaCar. CO<sub>2</sub> output would be measured and calculated (g of CO<sub>2</sub> per mile, continuous numerical data) at the tailpipe for MechaCars and cars from four of its top competitors for its design class, resulting in five different make/model car types. Fifty cars for each of the five car types would be randomly sampled (n = 50).   
 
+**- Null and Alternative Hypotheses:**
+Null hypothesis: The means of all of the groups for CO<sub>2</sub> output are equal.
+Alternative hypothesis: The mean from at least one group for CO<sub>2</sub> output differs from all of the other groups.
 
-- Metrics Tested:
+**- Statistical Test Used to Test Hypothesis: And Why?**
+Data for each of the five car types would be tested for normality using a Shapiro-Wilk normality test (alpha = 0.05, two-tailed), and density plotted for for visual confirmation. Equal variance assumptions will be assessed using box plots and a Bartlett's test (alpha = 0.05, two-tailed).  Once normality and variance assumptions are confirmed, a one-way fixed-effects analysis of variance (ANOVA) would be used to determine whether statistical differences exist between the means for CO<sub>2</sub> output (g of CO<sub>2</sub> per mile) of each of the five groups tested (alpha-level = 0.05, two-tailed).  Car type would be considered a fixed-effect.  A Bonferroni post-hoc test would be used to assess which groups differed from one another once an overall difference in means was found with ANOVA.
 
-- Null and Alternative Hypotheses:
-
-- Statistical Test Used to Test Hypothesis: And Why?
-
-- Data Needed to Perform Statistical Test:
