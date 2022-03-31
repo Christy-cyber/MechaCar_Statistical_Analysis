@@ -17,7 +17,7 @@ A multiple linear regression was performed on raw data using vehicle_length, veh
 
 ![mlr_output](https://user-images.githubusercontent.com/95387273/160720457-baef765f-aa11-4957-9671-59ed8b63507f.png)
 
-Fig. 1 Multiple linear regression output for mpg predictions.
+Fig. 1 Multiple linear regression output for mpg predictions. Statistical differences were determined at P < 0.05.
 
 
 ### Deliverable 2:  Summary Statistics on Suspension Coils
@@ -34,6 +34,46 @@ Table 2.  Lot summary of mean, median, variance, and standard deviation for thre
 
 
 ### Deliverable 3:  T-Tests on Suspension Coils
+Raw data (n = 150) for suspension coil pounds per square inch (PSI) were subjected to a Shapiro-Wilk test for normality.  Results showed that data were not normally distributed (P < 0.001) and a density plot revealed a leptokurtic distribution (Fig. 2). Multiple attempts to transform the data were made by using log10, log, square root, and 1/x transformations, but none corrected for non-normality. Because t-tests are robust to non-normality when sample sizes are greater than 50, raw data were subjected to a series of one-sample t-tests to determine: 
+- if PSI of suspension coils across all manufacturing lots was statistically different from the population mean of 1500 PSI.
+- if PSI of suspension coils from Lot 1 was statistically different from the population mean of 1500 PSI.
+- if PSI of suspension coils from Lot 2 was statistically different from the population mean of 1500 PSI.
+- if PSI of suspension coils from Lot 3 was statistically different from the population mean of 1500 PSI.
+
+Results from all t-tests mirrored information presented in Tables 1 and 2.  T-test results for PSI of all manufacturing lots showed no statistical difference with the population mean (t = -1.89, df = 149, P > 0.05) (Fig. 3), but further investigation indicated that the overall mean of 1498.78 PSI was driven primarily by PSI values of Lot 3.
+
+T-test results for PSI for Lot 1 (n = 50) showed no statistical difference with the population mean (t = 0, df = 49, P > 0.05).  The mean for Lot 1 was 1500 PSI (Fig. 4).
+
+T-test results for PSI for Lot 2 (n = 50) showed no statistical difference with the population mean (t = 0.517, df = 49, P > 0.05).  The mean for Lot 2 was 1500.2 PSI (Fig. 5). 
+
+T-test results for PSI for Lot 3 (n = 50) were statistically significant from the population mean (t = -2.09, df = 49, P < 0.05). The mean for Lot 3 was 1496.14 PSI, which was lower than the population mean of 1500 PSI. (Fig. 6).
+
+Not all manufacturing lots of suspension coils demonstrate the same performance of 1500 PSI as the population mean.  Lot 3 is underperforming, which may have significant negative outcomes once a vehicle is operational.
+
+
+![Rplot-Normality](https://user-images.githubusercontent.com/95387273/161083243-6b55e7d1-c82c-4e05-9580-a6291a73e734.png)
+
+Fig. 2. Density plot of raw data for suspension coil pounds per square inch (PSI) where n = 150.
+
+
+![t-test-all lots](https://user-images.githubusercontent.com/95387273/161081944-579db09d-b1fe-4e8e-a12c-fd17c5c6a20c.png)
+
+Fig. 3.  One-Sample t-test for all lots of suspension coil pounds per square inch (PSI) where n = 150.
+
+
+![t-test-lot1](https://user-images.githubusercontent.com/95387273/161081974-3bd0a2d5-527e-44c1-912e-8c5da8ec9bc6.png)
+
+Fig. 4.  One-Sample t-test for Lot 1 of suspension coil pounds per square inch (PSI) where n = 50.
+
+
+![t-test-lot2](https://user-images.githubusercontent.com/95387273/161082000-86d668e1-475a-44f5-8b4f-92a6c3c3362d.png)
+
+Fig. 5.  One-Sample t-test for Lot 2 of suspension coil pounds per square inch (PSI) where n = 50.
+
+
+![t-test-lot3](https://user-images.githubusercontent.com/95387273/161082041-5af0d10e-84db-4181-9bd0-0af45dcf6332.png)
+
+Fig. 6.  One-Sample t-test for Lot 3 of suspension coil pounds per square inch (PSI) where n = 50.
 
 
 
