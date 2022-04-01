@@ -79,7 +79,7 @@ Fig. 6.  One-Sample t-test for Lot 3 of suspension coil pounds per square inch (
 
 ### Deliverable 4: Study Design:  MechaCar vs Competition
 **- Description of statistical study, data collected, and metrics tested:**
-A completely randomized design would be used to to investigate differences in CO<sub>2</sub> output across different vehicle manufacturers within the same design class as MechaCar. CO<sub>2</sub> output would be measured and calculated (g of CO<sub>2</sub> per mile, continuous numerical data) at the tailpipe for MechaCars and cars from four of its top competitors for its design class, resulting in five different make/model car types. Fifty cars for each of the five car types would be randomly sampled (n = 50).   
+A completely randomized design would be used to to investigate differences in CO<sub>2</sub> output across different vehicle manufacturers within the same design class as MechaCar. CO<sub>2</sub> output would be measured and calculated (g of CO<sub>2</sub> per mile, continuous numerical data) at the tailpipe for MechaCars and cars from four of its top competitors for its design class, resulting in five different make/model car types. Three replicates of fifty cars for each of the five car types would be randomly sampled (n = 50).   
 
 **- Null and Alternative Hypotheses:**
 Null hypothesis: The means of all of the groups for CO<sub>2</sub> output are equal.
